@@ -1,3 +1,5 @@
+//server.js
+
 /* jslint node: true */
 'use strict'
 
@@ -37,7 +39,7 @@ console.log('App listening on port ' + port)
 
 var todoRoutes = require('./app/Routes')
 
-//  Use routes defined in Route.js and prefix with todo
+//  Use routes defined in Route.js and prefix it with api
 app.use('/api', todoRoutes)
 
 app.use(function (req, res, next) {
